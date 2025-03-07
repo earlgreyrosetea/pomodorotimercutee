@@ -13,8 +13,6 @@ function App() {
   const [timerFont, setTimerFont] = useState('VT323');
   const [alignment, setAlignment] = useState('left');
   const [link, setLink] = useState('');
-  const breakSound = new Audio('sounds/botw_new_item.mp3');
-  const workSound = new Audio('sounds/botw_spirit_orb.mp3');
 
   useEffect(() => {
     // Add the custom body class
@@ -28,7 +26,7 @@ function App() {
 
   // Function to update the preview and link
   useEffect(() => {
-    const updatedLink = `https://muederotter.github.io/petitepomodoro/#/timer?focus=${focus}&break=${breakTime}&reps=${reps}&color=${encodeURIComponent(color)}&timerFont=${encodeURIComponent(timerFont)}&sessionFont=${encodeURIComponent(sessionFont)}&alignment=${alignment}`;
+    const updatedLink = `https://earlgreyrosetea.github.io/pomodorotimercutee/#/timer?focus=${focus}&break=${breakTime}&reps=${reps}&color=${encodeURIComponent(color)}&timerFont=${encodeURIComponent(timerFont)}&sessionFont=${encodeURIComponent(sessionFont)}&alignment=${alignment}`;
     setLink(updatedLink);
   }, [focus, breakTime, reps, color, sessionFont, timerFont, alignment]);
 
