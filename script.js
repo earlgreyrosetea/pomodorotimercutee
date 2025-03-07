@@ -1,6 +1,3 @@
-import './styles/timer-setup.css';
-import './styles/fonts.css';
-
 const urlParams = new URLSearchParams(window.location.search);
 
 const lengths = {
