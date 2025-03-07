@@ -13,7 +13,8 @@ function App() {
   const [timerFont, setTimerFont] = useState('VT323');
   const [alignment, setAlignment] = useState('left');
   const [link, setLink] = useState('');
-
+  const breakSound = new Audio('sounds/botw_new_item.mp3');
+  const workSound = new Audio('sounds/botw_spirit_orb.mp3');
 
   useEffect(() => {
     // Add the custom body class
